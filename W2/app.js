@@ -49,7 +49,7 @@ if (timeToEat > '12pm') {
     console.log('misses out on knowledge.')
 }
 
-if (timeToWorkOut  '6pm') {
+if (timeToWorkOut > '6pm') {
     console.log(`Since`, name, `workouts at 6pm he is a Champion!`)
 } else {
     console.log('Is Weak!')
