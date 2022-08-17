@@ -30,22 +30,26 @@ displayOnPage('Time to work out ---> 6pm')
 let name = 'JuanJ'
 
 
-if (timeToSleep) {
+if (timeToSleep < '10pm' ) {
     console.log(`Since`, name, `goes to bed at 10pm he is a True Champion!`)
+} else {
+    console.log(`is weak`)
 }
 
-if (timeToGetUp = '8am') {
+if (timeToGetUp > '8am') {
     let isSmart = name === 'JuanJ';
     console.log(`Since`, name, `Gets up at 8am he is a true Champion!`)
-} 
+} else {
+    console.log(`is weak`)
+}
 
-if (timeToEat = '12pm') {
+if (timeToEat > '12pm') {
     console.log(`Since`, name, `eats at 12pm he is a true Champion!`)
 } else {
     console.log('misses out on knowledge.')
 }
 
-if (timeToWorkOut = '6pm') {
+if (timeToWorkOut  '6pm') {
     console.log(`Since`, name, `workouts at 6pm he is a Champion!`)
 } else {
     console.log('Is Weak!')
