@@ -28,31 +28,17 @@ displayOnPage('Time to work out ---> 6pm')
 // local 
 // GLobal
 let name = 'JuanJ'
-
-
-if (timeToSleep < '10pm' ) {
+let isSmart = 'JuanJ' <= timeToSleep <= '10pm';
+           
+ if (timeToSleep <= '10pm' && timeToEat <= '12pm' ) {
+    let Juanj = 'Juanj'
     console.log(`Since`, name, `goes to bed at 10pm he is a True Champion!`)
+} else if (timeToWorkOut <= '6pm' || timeToGetUp <= '8am') {
+    console.log(`Then the schedule is on track`)
 } else {
-    console.log(`if misses out on sleep at 10pm then is weak`)
+    console.log(`It is all a fallacy!`)
 }
+   
+   
 
-if (timeToGetUp > '8am') {
-    let isSmart = name === 'JuanJ';
-    console.log(`Since`, name, `Gets up at 8am he is a true Champion!`)
-} else {
-    console.log(`if misses out on getting up at 8am then is weak`)
-}
 
-if (timeToEat > '12pm') {
-    console.log(`Since`, name, `eats at 12pm he is a true Champion!`)
-} else {
-    console.log('if does not eat at 12pm, then misses out on knowledge.')
-}
-
-if (timeToWorkOut > '6pm') {
-    console.log(`Since`, name, `workouts at 6pm he is a Champion!`)
-} else {
-    console.log('if misses out on workout then Is Weak!')
-}
-
-console.log(`I prepare to eat at`, timeToEat + `.`)
