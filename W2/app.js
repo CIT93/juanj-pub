@@ -33,26 +33,26 @@ let name = 'JuanJ'
 if (timeToSleep < '10pm' ) {
     console.log(`Since`, name, `goes to bed at 10pm he is a True Champion!`)
 } else {
-    console.log(`is weak`)
+    console.log(`if misses out on sleep at 10pm then is weak`)
 }
 
 if (timeToGetUp > '8am') {
     let isSmart = name === 'JuanJ';
     console.log(`Since`, name, `Gets up at 8am he is a true Champion!`)
 } else {
-    console.log(`is weak`)
+    console.log(`if misses out on getting up at 8am then is weak`)
 }
 
 if (timeToEat > '12pm') {
     console.log(`Since`, name, `eats at 12pm he is a true Champion!`)
 } else {
-    console.log('misses out on knowledge.')
+    console.log('if does not eat at 12pm, then misses out on knowledge.')
 }
 
 if (timeToWorkOut > '6pm') {
     console.log(`Since`, name, `workouts at 6pm he is a Champion!`)
 } else {
-    console.log('Is Weak!')
+    console.log('if misses out on workout then Is Weak!')
 }
 
 console.log(`I prepare to eat at`, timeToEat + `.`)
