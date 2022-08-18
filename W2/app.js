@@ -27,17 +27,20 @@ displayOnPage('Time to work out ---> 6pm')
 //let timeToWorkOut1 = '6pm';
 // local 
 // GLobal
+
 let name = 'JuanJ'
 let isSmart = 'JuanJ' <= timeToSleep <= '10pm';
            
  if (timeToSleep <= '10pm' && timeToEat <= '12pm' ) {
     let Juanj = 'Juanj'
-    console.log(`Since`, name, `goes to bed at 10pm he is a True Champion!`)
+    displayOnPage(`goes to bed at 10pm he is a True Champion!`)
 } else if (timeToWorkOut <= '6pm' || timeToGetUp <= '8am') {
-    console.log(`Then the schedule is on track`)
+    displayOnPage(`Then the schedule is on track`)
 } else {
-    console.log(`It is all a fallacy!`)
+    displayOnPage(`It is all a fallacy!`)
 }
+           
+
    
    
 
