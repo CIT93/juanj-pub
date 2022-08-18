@@ -39,7 +39,7 @@ let isSmart = 'JuanJ' <= timeToSleep <= '10pm';
 } else {
     displayOnPage(`It is all a fallacy!`)
 }
-           
+console.log(`Hello World`)
 
    
    
