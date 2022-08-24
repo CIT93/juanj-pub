@@ -1,7 +1,10 @@
 // displayOnPage functionality
 // Variable displayed
 
-
+let timeToSleep = '10pm'
+let timeToGetUp = '8am'
+let timeToEat = '12pm'
+let timeToWorkOut = '6pm'
 
 const displayOnPage = function (text) {
     let newParagraph = document.createElement("P")
@@ -18,6 +21,36 @@ let saluteCustomer = function (name) {
 
 saluteCustomer()
 
+let myDecision = function () {
+    let message 
+    if (timeToSleep <= '10pm' && timeToEat > '12pm' ) {
+        
+        message = `goes to bed at 10pm he is a True Champion!`
+    } else if (timeToWorkOut <= '6pm' || timeToGetUp <= '8am') {
+        message = `Then the schedule is on track`
+    } else {
+        message = `It is all a fallacy!`
+    }
+    return message
+}
+
+let message = myDecision()
+displayOnPage(message)
+
+let isStrong = function() {
+    let anotherMessage 
+
+    anotherMessage 
+    if (name === undefined) {
+        anotherMessage = 'please provide a name'
+    } else {
+        anotherMessage = (name)
+    }
+    return anotherMessage
+       
+} 
+let anotherMessage = isStrong()
+displayOnPage(anotherMessage)
 
 let circle = function(num) {
     let result = num 
@@ -25,15 +58,12 @@ let circle = function(num) {
 }
 let value = circle(7)
 let otherValue = circle(4)
-
 displayOnPage(value + ' ' + `days a week`)
 
 
 
-let timeToSleep = '10pm'
-let timeToGetUp = '8am'
-let timeToEat = '12pm'
-let timeToWorkOut = '6pm'
+displayOnPage(`Hello Customer! ${name}`)
+
 
 displayOnPage('Hello World')
 displayOnPage('Time to sleep ---> 10pm')
@@ -48,29 +78,17 @@ displayOnPage(otherValue+' ' + `days of workout!`)
 //let timeToWorkOut1 = '6pm';
 // local 
 // GLobal
-let name 
 
-name = 'JuanJ'
-displayOnPage(`Hello Customer! ${name}`)
-let isStrong = 'JuanJ' <= timeToSleep <= '10pm';
+
+
+
+// 'JuanJ' <= timeToSleep <= '10pm';
            
- if (timeToSleep <= '10pm' && timeToEat <= '12pm' ) {
-    let Juanj = 'Juanj'
-    displayOnPage(`goes to bed at 10pm he is a True Champion!`)
-} else if (timeToWorkOut <= '6pm' || timeToGetUp <= '8am') {
-    displayOnPage(`Then the schedule is on track`)
-} else {
-    displayOnPage(`It is all a fallacy!`)
-}
+ 
 console.log(`Hello World`)
 // undefined null
 
-if (name === undefined) {
-    console.log('please provide a name')
-} else {
-    console.log(name)
-}
-   
+
    
 
 
