@@ -10,9 +10,11 @@ const displayOnPage = function (text) {
     outputDiv.append(newParagraph)
 }
 
-let saluteCustomer = function () {
-    console.log('Hello Customer!')
+let saluteCustomer = function (name) {
+    
 } 
+
+
 
 saluteCustomer()
 
@@ -24,7 +26,7 @@ let circle = function(num) {
 let value = circle(7)
 let otherValue = circle(4)
 
-displayOnPage(value, + `days a week`)
+displayOnPage(value + ' ' + `days a week`)
 
 
 
@@ -38,7 +40,7 @@ displayOnPage('Time to sleep ---> 10pm')
 displayOnPage('Time to get up ---> 8am')
 displayOnPage('Time to eat ---> 12pm')
 displayOnPage('Time to work out ---> 6pm')
-displayOnPage(otherValue, `of workout!`)
+displayOnPage(otherValue+' ' + `days of workout!`)
 // Displays a variable and a string.
 //  Displays a Scope 
 // Displays a Boolean
@@ -49,7 +51,7 @@ displayOnPage(otherValue, `of workout!`)
 let name 
 
 name = 'JuanJ'
-
+displayOnPage(`Hello Customer! ${name}`)
 let isStrong = 'JuanJ' <= timeToSleep <= '10pm';
            
  if (timeToSleep <= '10pm' && timeToEat <= '12pm' ) {
