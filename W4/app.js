@@ -1,28 +1,42 @@
 // displayOnPage functionality
 // Variable displayed
 // Daily schedule
-const saluteCustomer = {
+/* const saluteCustomer = {
     name: 'JuanJ',
     age: 32,
     location: 'Fresno',
-    myDecision: function(message){
-        this.displayOnPage(`<b>${heading}<b>`);
-
-    },
-    
-}
-    displayOnPage= function (text) {
+    timeToSleep: 10,
+    timeToEat: 12,
+    timeToGetUp: 8,
+    timeToWorkOut: 6,
+   myDecision: function (timeToSleep) {
+        let message 
+        if (this.timeToSleep <= '10pm' && this.timeToEat > '12pm' ) {
+            
+            message = `goes to bed at 10pm he is a True Champion!`
+        } else if (timeToWorkOut <= '6pm' || timeToGetUp <= '8am') {
+            message = `Then the schedule is on track`
+        } else {
+            message = `It is all a fallacy!`
+        }
+        return message
+    }, }*/
+     const displayOnPage = function (text) {
         const newParagraph = document.createElement("P")
         newParagraph.innerHTML = text
         const outputDiv = document.getElementById("output")
         outputDiv.append(newParagraph)
-    }
+}
 
+    
+    
+/*saluteCustomer.myDecision(timeToSleep)    
+saluteCustomer.displayOnPage('hello World')
 
-const timeToSleep = '10pm'
-const timeToGetUp = '8am'
+ const timeToSleep = '10pm' */
+/* const timeToGetUp = '8am'
 const timeToEat = '12pm'
-const timeToWorkOut = '6pm'
+const timeToWorkOut = '6pm' 
 
 const myDecision = function () {
     let message 
@@ -77,9 +91,4 @@ displayOnPage('Time to eat ---> 12pm')
 displayOnPage('Time to work out ---> 6pm')
 displayOnPage(otherValue+' ' + `days of workout!`)          
  
-
-
-
-   
-
-
+*/
