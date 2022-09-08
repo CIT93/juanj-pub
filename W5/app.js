@@ -41,10 +41,10 @@ let otherValue = circle(4);
 displayOnPage(value + " " + `days a week of workout!`);
 
 displayOnPage(`Hello Customer! ${name}`);
-let getSummary = function (book) {
+let getSummary = function (gym) {
   return {
     summary: `${otherGym.title} has ${otherGym.members} members.`,
-    membersSummary: `${book.title} has ${book.members} members.`,
+    membersSummary: `${myGym.title} has ${myGym.members} members.`,
   };
 };
 
