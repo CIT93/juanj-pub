@@ -11,6 +11,12 @@ let myGym = {
   roomAvailable: function (gymSize) {
     let availableRoom = this.availableSpots - this.memberships;
     return gymSize <= availableRoom;
+   },
+  gymRoom: function (gymSize) {
+    this.memberships = this.memberships + gymSize;
+  },
+  removeMembers: function (gymSize) {
+    this.memberships = this.memberships - gymSize;
   },
   
 }
@@ -53,5 +59,4 @@ displayOnPage(myGym.roomAvailable(4));
 myGym.removeMembers(5);
 displayOnPage(myGym.roomAvailable(5));
 
-myGym.myDecision();
-displayOnPage(); 
+
