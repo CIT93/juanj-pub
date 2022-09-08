@@ -1,14 +1,20 @@
 // displayOnPage functionality
 // Variable displayed
 // Daily schedule
-
+const displayOnPage = function (text) {
+  const newParagraph = document.createElement("P")
+  newParagraph.innerHTML = text
+  const outputDiv = document.getElementById("output")
+  outputDiv.append(newParagraph)
+}
 const gym = {
   name: "GB3",
   availableSpots: 55,
   memberships: 0,
   roomAvailable: function (gymSize) {
     let availableRoom = this.availableSpots - this.memberships;
-    return gymSize <= availableRoom;
+    return gymSize <= availableRoom 
+    
   },
   gymRoom: function (gymSize) {
     this.memberships = this.memberships + gymSize;
