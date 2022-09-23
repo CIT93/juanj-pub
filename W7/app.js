@@ -19,12 +19,14 @@ let otherGyms = [
   },
 ];
 displayOnPage(`Hello Customer! ${name}`);
+const gymTime = function () {
 if (otherGyms.members >= 500 && otherGyms.location === "Fresno") {
   displayOnPage("I might go to the gym.");
 } else {
   displayOnPage("decide?");
 }
-
+return gymTime
+} 
 let guess = function (num) {
   let result = num;
   return result;
